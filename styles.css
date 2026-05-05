@@ -1,0 +1,151 @@
+/*
+* Styling for the portfolio website.
+* Focus on a modern, clean, professional, and engineering-focused design.
+*/
+
+:root {
+    --primary-color: #007acc; /* A nice tech blue */
+    --secondary-color: #333;
+    --text-color: #333;
+    --background-light: #f4f4f4;
+    --white: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+}
+
+header {
+    background: var(--secondary-color);
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1.name {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+nav a {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: var(--white);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Global Section Styles */
+section {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+    scroll-margin-top: 80px; /* Space for sticky/fixed header */
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+h2 {
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--primary-color);
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about p {
+    margin-bottom: 1rem;
+}
+
+/* Experience Section */
+.school-entry, .job-entry {
+    margin-bottom: 20px;
+}
+.school-entry h3, .job-entry h3 {
+    color: var(--primary-color);
+    margin-bottom: 5px;
+}
+.school-entry .degree, .job-entry .title {
+    font-style: italic;
+    margin: 0;
+}
+.school-entry .year, .job-entry .date {
+    display: block;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Skills Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+thead {
+    background-color: var(--background-light);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px 0;
+    background: var(--secondary-color);
+    color: white;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header h1.name {
+        font-size: 2em;
+    }
+    nav button {
+        margin: 0 5px;
+        font-size: 0.9em;
+    }
+}
