@@ -21,7 +21,7 @@ Bachelor’s of Electrical Engineering	2020 \- 2024
 
 **Vision-Language-Action model for AMR Navigation	2026 \- Present**
 
-* Currently exploring Vision-Language-Action (VLA) models for AMR navigation.
+* Successfully implemented VLA on a Lab mobile wheeled robot for autonomous navigation.
 
 **AMR Navigation using RTAB-Map and ArUco with RGB Camera and 3D LiDAR	2025**
 
